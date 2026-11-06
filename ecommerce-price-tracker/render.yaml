@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ecommerce-price-tracker
+    runtime: node
+    buildCommand: npm ci --prefix backend && npm ci --prefix frontend && npm --prefix frontend run build
+    startCommand: node backend/server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true

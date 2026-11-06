@@ -1,0 +1,93 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  min-height: 76px;
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+  width: auto;
+  max-width: 1400px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.navbar-links a:hover {
+  background: #374151;
+}
+
+.navbar-links button {
+  color: white;
+  border: none;
+  background: transparent;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.navbar-links button:hover {
+  background: #374151;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: flex-start;
+    padding: 0 8px;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  .navbar-links {
+    justify-content: flex-start;
+  }
+
+  .navbar-links a,
+  .navbar-links button {
+    font-size: 12px;
+  }
+}
+
+.app-content {
+  padding-bottom: 92px;
+}

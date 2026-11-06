@@ -1,0 +1,217 @@
+.visual-search-page .visual-header {
+    width: 100%;
+    margin: 0 0 28px;
+    padding: 24px 26px;
+    box-sizing: border-box;
+    text-align: center;
+    background: linear-gradient(120deg, #ede9fe 0%, #e0f2fe 100%);
+    border: 1px solid rgba(124, 58, 237, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(79, 70, 229, 0.1);
+}
+
+.visual-search-page .visual-header h1 {
+    margin: 0;
+    color: #312e81;
+    font-size: clamp(26px, 4vw, 34px);
+    font-weight: 750;
+    letter-spacing: -0.5px;
+}
+
+.visual-search-page .visual-header p {
+    margin: 9px 0 0;
+    color: #555b75;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.visual-search-page .visual-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0 auto 26px;
+}
+
+.visual-search-page .visual-buttons .gallery-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 56px;
+    min-width: 220px;
+    padding: 0 24px;
+    border: 0;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+    box-shadow: 0 8px 18px rgba(79, 70, 229, 0.22);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.visual-search-page .visual-buttons .gallery-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(79, 70, 229, 0.3);
+}
+
+.visual-search-page .visual-buttons .gallery-button:focus-visible {
+    outline: 3px solid rgba(79, 70, 229, 0.35);
+    outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+    .visual-search-page .visual-header {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .visual-search-page .visual-buttons {
+        flex-direction: column;
+    }
+
+    .visual-search-page .visual-buttons .gallery-button {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+.history-page {
+    min-height: 100vh;
+    padding: 30px;
+    background: #f5f7fb;
+}
+
+.history-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.history-back-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.history-header {
+    margin-bottom: 30px;
+}
+
+.history-header h1 {
+    margin-bottom: 8px;
+}
+
+.history-header p {
+    color: #666;
+}
+
+.history-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.history-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.clear-history-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ff4d4d;
+    color: white;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+}
+
+.history-item-icon {
+    font-size: 25px;
+}
+
+.history-item-details {
+    flex: 1;
+}
+
+.history-item-details h3 {
+    margin: 0 0 5px;
+}
+
+.history-item-details p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.search-again-button {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.history-message {
+    text-align: center;
+    background: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+}
+
+.history-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.search-products-button,
+.history-retry-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .history-page {
+        padding: 15px;
+    }
+
+    .history-top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .history-item {
+        flex-wrap: wrap;
+    }
+
+    .search-again-button {
+        width: 100%;
+    }
+
+}
